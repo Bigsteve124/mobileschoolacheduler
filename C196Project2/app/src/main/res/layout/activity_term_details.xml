@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listTitle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.TermDetails">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/tdscroll"
+        android:layout_width="409dp"
+        android:layout_height="200dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/endTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="End Date"
+        app:layout_constraintLeft_toLeftOf="@id/startTerm"
+        app:layout_constraintTop_toBottomOf="@+id/startTerm" />
+
+    <EditText
+        android:id="@+id/termED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/endTerm"
+        app:layout_constraintLeft_toRightOf="@id/endTerm" />
+
+    <TextView
+        android:id="@+id/startTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Start Date"
+        app:layout_constraintLeft_toLeftOf="@id/termTitle"
+        app:layout_constraintTop_toBottomOf="@+id/termTitle" />
+
+    <EditText
+        android:id="@+id/termSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/startTerm"
+        app:layout_constraintLeft_toRightOf="@id/startTerm" />
+
+    <TextView
+        android:id="@+id/termTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Term Title"
+        app:layout_constraintLeft_toLeftOf="@id/tdscroll"
+        app:layout_constraintTop_toTopOf="@+id/tdscroll" />
+
+    <EditText
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/termTitle"
+        app:layout_constraintLeft_toRightOf="@id/termTitle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tdrecycler"
+        android:layout_width="67dp"
+        android:layout_height="569dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tdscroll"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/cancelbuttonterm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:text="Cancel"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="668dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
