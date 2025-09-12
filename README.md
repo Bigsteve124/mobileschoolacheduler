@@ -2,7 +2,7 @@
 
 <h2>Description</h2>
 
-An Android mobile application that schedules school funtions. It has the ability to scheudle a term, link a course to a term and an assessment to  a course. It utilizes SQLITE to build a database. The app has the ability to take a note from the course and share it via email or text. It uses basic clip art for the main screen picture of a school cap. The app utilizes buttons to navigate the screens versus swipe method.
+An Android mobile application that schedules school functions. It can schedule a term, link a course to a term, and link an assessment to a course. It utilizes SQLITE to build a database. The app can take notes from the course and share them via email or text. It uses basic clip art for the main screen picture of a school cap. The app utilizes buttons to navigate the screens versus the swipe method.
 
 <h3>Uses</h3>
 
